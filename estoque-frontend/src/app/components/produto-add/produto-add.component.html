@@ -1,0 +1,22 @@
+<div class="container">
+    <h2>Adicionar Produto</h2>
+    <form (ngSubmit)="salvarProduto()">
+      <mat-form-field>
+        <input matInput placeholder="Nome" [(ngModel)]="produto.nome" name="nome" required>
+      </mat-form-field>
+  
+      <mat-form-field>
+        <input matInput placeholder="Descrição" [(ngModel)]="produto.descricao" name="descricao" required>
+      </mat-form-field>
+  
+      <mat-form-field>
+        <input matInput type="number" placeholder="Preço" [(ngModel)]="produto.preco" name="preco" required>
+      </mat-form-field>
+  
+      <mat-form-field>
+        <input matInput type="number" placeholder="Estoque" [(ngModel)]="produto.quantidadeEstoque" name="quantidadeEstoque" required>
+      </mat-form-field>
+  
+      <button mat-raised-button color="primary" type="submit">Salvar</button>
+    </form>
+  </div>
